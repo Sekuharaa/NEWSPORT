@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомление</title>
+</head>
+<body>
+    {% load account %}
+    <h1>Спасибо за регистрацию, {{ user.username }}!</h1>
+    <h3>Пожалуйста, нажмите <a href="{{ activate_url }}">сюда</a> для подтверждения почты</h3>
+</body>
+</html>
